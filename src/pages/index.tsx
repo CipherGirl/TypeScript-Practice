@@ -15,11 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className='bg-blue-500 h-full'>
         <Link href='/login'>LOGIN</Link>
-        <h1 className="text-3xl font-bold underline">
+        {/* <h1 className="text-3xl font-bold underline">
           Hello world!
-        </h1>
+        </h1> */}
+        <div className='m-0 space-y-2'>
+          <img src='dots.svg' alt={'Dots'} className='md:w-[10vw] md:block hidden' ></img>
+          <img src='dots.svg' alt={'Dots'} className='md:w-[10vw] md:block hidden ml-[10%]' ></img>
+          <img src='dots.svg' alt={'Dots'} className='md:w-[10vw] md:block hidden' ></img>
+        </div>
       </main>
     </>
   )
